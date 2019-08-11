@@ -115,17 +115,26 @@
             var accHD = document.getElementsByClassName('title');
             for (i = 0; i < accHD.length; i++) {
                 accHD[i].addEventListener('click', toggleItem, false);
+                console.log('++++++' + i);
             }
             function toggleItem() {
                 var itemClass = this.parentNode.className;
                 for (i = 0; i < accItem.length; i++) {
                     accItem[i].className = 'myClass close';
+                    console.log('----------' + i);
                 }
-                if (itemClass == 'myClass close') {
-                    this.parentNode.className = 'myClass open';
+                if (itemClass == 'offer-caas-offer style-scope caas-offers-base myClass close') {
+                    this.parentNode.className = 'offer-caas-offer style-scope caas-offers-base myClass open';
                 }
             }
         </script>
 
     </body>
 </html>
+
+
+myClass        = LOR-12-accordianItem
+title          = LOR-12-offer-head
+offer-features = LOR-12-feature
+
+
